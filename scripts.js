@@ -24,6 +24,10 @@ function skip() {
   video.currentTime += parseFloat(this.dataset.skip);
  }
 
+ function handleRangeUpdate() {
+  video[this.name] = this.value;
+}
+
 
 
 /* Hook up the event listners */
